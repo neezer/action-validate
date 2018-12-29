@@ -11,6 +11,8 @@ jobs:
       script: yarn test
     - stage: commitlint
       script: npx @commitlint/travis-cli
+    - stage: audit
+      script: yarn audit
     - stage: release
       if: branch = master
       node_js: lts/*
