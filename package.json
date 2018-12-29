@@ -17,6 +17,7 @@
     "@types/debug": "^0.0.31",
     "@types/tape": "^4.2.33",
     "prettier": "^1.15.3",
+    "rimraf": "^2.6.2",
     "semantic-release": "^15.13.2",
     "tape": "^4.9.1",
     "ts-node": "^7.0.1",
@@ -25,6 +26,7 @@
     "typescript": "^3.2.2"
   },
   "scripts": {
+    "build": "rimraf dist && tsc",
     "test": "ts-node test/index.test.ts"
   }
 }
